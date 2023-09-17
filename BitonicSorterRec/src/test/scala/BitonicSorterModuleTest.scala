@@ -6,7 +6,6 @@ import scala.util.Random // Import the Random class
 
 class BitonicSorterModuleTest extends AnyFlatSpec with ChiselScalatestTester {
   def generateRandomInput(size: Int, len: Int): Seq[UInt] = {
-    //Seq.fill(size)(Random.nextInt(1 << size).U) //(width = size.W)
     Seq.fill(len)(BigInt(size, Random).U(size.W))
   }
   "BitonicSorterModule" should "sort input values in ascending order" in {
@@ -26,7 +25,7 @@ class BitonicSorterModuleTest extends AnyFlatSpec with ChiselScalatestTester {
           inputPort.poke(input(index))
         }
 
-        dut.clock.step()
+        //dut.clock.step()
 
         // Check if the output values are in ascending order
         var prevValue = BigInt(0)
@@ -58,7 +57,7 @@ class BitonicSorterModuleTest extends AnyFlatSpec with ChiselScalatestTester {
           inputPort.poke(input(index))
         }
 
-        dut.clock.step()
+        //dut.clock.step()  //Sequential circuit, clk not needed
 
         // Check if the output values are in descending order
         val veryLargeNumber = BigInt("922337203685477580755555")

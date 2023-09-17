@@ -1,2 +1,6 @@
-[0m[[0m[33mwarn[0m] [0m[0m16 feature warnings; re-run with -feature for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/leka/Documents/master/masterRad/IdeaProjects/BitonicSorterRec/src/main/scala/BitonicSorterModule.scala:114:71: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : (chisel3.UInt, chisel3.UInt) => chisel3.Bool[0m
+[0m[[0m[31merror[0m] [0m[0m required: (T, T) => chisel3.Bool[0m
+[0m[[0m[31merror[0m] [0m[0m  io.z := VecInit(BitonicSorter.sort(a, ascending, (x: UInt, y: UInt) => x < y).map(_.get))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
