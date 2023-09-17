@@ -11,3 +11,4 @@ lazy val root = (project in file("."))
 addCompilerPlugin(("edu.berkeley.cs" %% "chisel3-plugin" % chiselVersion).cross(CrossVersion.full))
 libraryDependencies += "edu.berkeley.cs" %% "chisel3" % chiselVersion
 libraryDependencies += "edu.berkeley.cs" %% "chiseltest" % chiselTestVersion
+

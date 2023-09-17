@@ -107,6 +107,9 @@ class SorterModuleIfc[T <: Data](val n: Int, proto: T) extends Module {
  */
 
 class BitonicSorterModule[T <: Data](n: Int, proto: T, ascending: Bool, lt: (T, T) => Bool) extends SorterModuleIfc(n, proto) {
+  if ((1 << log2Up(io.a.length)) != io.a.length && io.a.length > 1) {
+    throw new IllegalArgumentException("Array length must be a power of 2")
+  }
   private val a = IndexedSeq.tabulate(if (n <= 1) 1 else 1 << log2Up(io.a.length)) { i => if (i < n) Some(io.a(i)) else None }  //special case is a sequence of length 1
   io.z := VecInit(BitonicSorter.sort(a, ascending, lt).map(_.get))
 }
