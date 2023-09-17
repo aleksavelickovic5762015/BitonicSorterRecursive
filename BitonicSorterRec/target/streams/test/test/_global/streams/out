@@ -1,11 +1,11 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BitonicSorterModuleTest, org.scalatest.tools.Framework$$anon$1@272ed628, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(BitonicSorterModuleTest, org.scalatest.tools.Framework$$anon$1@7c9383b6, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mBitonicSorterModuleTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mBitonicSorterModule[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should sort input values in ascending order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mBitonicSorterModule[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should sort input values in descending order[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should not allow construction of Arrays whose length is not a power of 2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 975 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 2 seconds, 585 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 3[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 1, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 3, failed 0, canceled 0, ignored 0, pending 0[0m[0m

@@ -75,8 +75,11 @@ class BitonicSorterModuleTest extends AnyFlatSpec with ChiselScalatestTester {
   }
 
   it should "not allow construction of Arrays whose length is not a power of 2" in {
-    assertThrows[IllegalArgumentException] {
-      new BitonicSorterModule(7, UInt(8.W), true.B, (x: UInt, y: UInt) => x < y)
-    }
+    assertThrows[IllegalArgumentException] { new BitonicSorterModule(7, UInt(8.W), true.B, (x: UInt, y: UInt) => x < y) }
+    assertThrows[IllegalArgumentException] { new BitonicSorterModule(9, UInt(8.W), true.B, (x: UInt, y: UInt) => x < y) }
+    assertThrows[IllegalArgumentException] { new BitonicSorterModule(10, UInt(8.W), true.B, (x: UInt, y: UInt) => x < y) }
+    assertThrows[IllegalArgumentException] { new BitonicSorterModule(21, UInt(8.W), true.B, (x: UInt, y: UInt) => x < y) }
+    assertThrows[IllegalArgumentException] { new BitonicSorterModule(30, UInt(8.W), true.B, (x: UInt, y: UInt) => x < y) }
+    assertThrows[IllegalArgumentException] { new BitonicSorterModule(43, UInt(8.W), true.B, (x: UInt, y: UInt) => x < y) }
   }
 }
